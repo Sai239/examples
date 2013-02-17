@@ -1,7 +1,5 @@
-spring-aop-example
-==================
-
 Example for @AspectJ aspects in Spring AOP.
+-------------------------------------------
 
 @AspectJ aspects are POJOs decorated with annotations defined in AspectJ (`org.aspectj.lang.annotation.*`). This module
 shows how Spring can make these aspects work on configured Spring beans using JDK dynamic proxies without depending on
