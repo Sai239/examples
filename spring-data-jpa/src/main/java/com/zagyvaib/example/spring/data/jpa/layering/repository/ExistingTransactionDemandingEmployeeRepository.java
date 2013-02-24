@@ -7,7 +7,8 @@ import com.zagyvaib.example.spring.data.jpa.layering.infrastructure.ReadOnlyAndR
 // @ReadOnlyAndRequiresExistingTransaction declares that methods on _this_ interface (as opposed to methods inherited
 // from super-interfaces) are read-only and demand an existing transaction when they are invoked.
 @ReadOnlyAndRequiresExistingTransaction
-public interface EmployeeRepository extends ExistingTransactionDemandingRepository<Employee, Long> {
+public interface ExistingTransactionDemandingEmployeeRepository
+        extends ExistingTransactionDemandingRepository<Employee, Long> {
 
     Employee findByName(String name);
 }
